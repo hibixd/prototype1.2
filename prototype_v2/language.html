@@ -1,0 +1,376 @@
+<!doctyle html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8" meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prototype 2</title> 
+</head>
+<style>
+    
+    .maincontainer {
+    position: relative;
+    height: 1080px;
+    width: 1920px;
+    }
+    
+/**TV SCREEN**/
+  
+.TV {
+  width: 720px;
+  height: 480px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  position:absolute;
+  top: 50px;
+}
+    
+.slider{
+  width: 22px;
+  height: 22px;
+  background-color: #d7d7d7;
+}
+    
+    
+/**PHONE**/
+    
+.mobilecontainer {
+  position: relative;
+  left: 216px;
+  right:153px;
+  bottom:236px;
+  top: 237px;
+}
+    
+.Mobile {
+  width: 374px;
+  height: 600px;
+  border-radius: 5px;
+  background-color: #ebebeb;
+  position:absolute;
+  top: 1px;
+  right: 10px;
+}
+    
+/**REMOTE**/
+
+.rcontainer {
+  position: relative;
+  left: 41px;
+  right:41px;
+  bottom:41px;
+  top: 155px;
+}
+    
+.navcontainer2 {
+  position: relative;
+  left: 62px;
+  right:147px;
+  bottom:114px;
+  top: 112px;
+}
+    
+
+.remoteback {
+  width: 292px;
+  height: 373px;
+  border-radius: 10px;
+  background-color: #e1e1e1;
+  position: absolute;
+}
+    
+/**REMOTE NAV**/
+    
+.left {
+  width: 83px;
+  height: 117px;
+  object-fit: contain;
+  margin-top:10%;
+  position:absolute;
+  left: 62px;
+  top: 83px;
+}
+    
+.up {
+  width: 117px;
+  height: 86px;
+  object-fit: contain;
+  margin-top: 10%;
+  position:absolute;
+  left: 87px;
+  top:59px;
+}
+
+.right {
+  width: 83px;
+  height: 116px;
+  object-fit: contain;
+  position:absolute;
+  right: 66px;
+  top:113px;
+}
+
+.down {
+  width: 117px;
+  height: 87px;
+  object-fit: contain;
+  position:absolute;
+  left: 84px;
+  top:167px;
+}
+    
+.select {
+  width: 80px;
+  height: 80px;
+  background-color: 00000;
+  border-radius: 50%;
+  position:absolute;
+  left: 104px;
+  top:131px;
+}
+    
+.pauseplay {
+  width: 26px;
+  height: 13px;
+  object-fit: contain;
+  border-radius: 1px;
+  position:absolute;
+  left: 130px;
+  top:165px;
+}
+    
+    
+/**REMOTE MOVBAR**/
+    
+
+h1 {
+  width: 77px;
+  height: 10px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d0d0d;
+  left: 107px;
+  top: 10px;
+  position: absolute;
+}
+    
+.search {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  position: absolute;
+  top:18px;
+  right: 18px;
+}
+    
+.timeframe {
+  width: 232px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  left: 29px;
+  top: 56px;
+}
+    
+.timeslide {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 29px;
+  top: 50px;
+}
+    
+/**REMOTE SOUND**/
+    
+.soundbar {
+  width: 157px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+  left: 68px;
+  top: 282px;
+}
+
+.soundslide {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 172px;
+  top: 276px;
+}
+    
+/**REMOTE ADDITIONS**/
+    
+.langbutton {
+  width: 81px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 29px;
+  top: 301px;
+}
+
+.capbutton {
+  width: 81px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 180px;
+  top: 301px;
+}
+    
+.language {
+  width: 62px;
+  height: 13px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  color: #0d0d0d;
+}
+
+.caption {
+  width: 62px;
+  height: 13px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  color: #0d0d0d;
+}
+    
+.Back {
+  width: 46px;
+  height: 10px;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0d0d;
+  position: absolute;
+  top: 348px;
+  left:20px;
+  background:#e1e1e1;
+}
+
+.Back .text-style-1 {
+  font-size: 18px;
+  letter-spacing: 2.9px;
+}
+    
+.settings {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+  position: absolute;
+  right: 11px;
+  top:346px;
+}
+
+  
+</style>
+<body>
+   <div class ="maincontainer">
+   
+
+   <!--TV SCREEN-->
+  <div class="TV">
+        
+        <!--Slider-->
+        
+    </div>
+    </div>
+    
+   <!--Phone SCREEN-->
+    
+    <div class="Mobile">
+    
+    <!--Remote-->
+    <div class="rcontainer">
+    
+    <div class="remoteback">
+    
+    <!--Title-->
+    
+    <h1>Movie Title</h1>
+    
+    <!--Search-->
+    
+    <img src="images/search.png"
+     class="search" >
+     
+    <!--Timeframe-->
+    
+    <div class="timeframe"></div>
+    <div class="timeslide"></div>
+    
+    <!--Nav-->
+    
+    <img src="images/left.png"
+    class="left">
+    
+    <img src="images/up.png"
+    class="up">
+    
+    
+    <img src="images/right.png"
+    class="right">
+    
+    <img src="images/down.png"
+    class="down" type="button">
+    
+    <div class="select" type="button"></div>
+    
+    <img src="images/pauseplay.png"
+    class="pauseplay" type="button">
+    
+    <!--Sound-->
+    <div class="soundbar"></div>
+    <div class="soundslide"></div>
+    
+    
+    <!--Back-->
+    <button class = "Back" href="index.html">Back</button>
+    
+    <!--Settings-->
+    <img src="images/settings.png" class="settings">
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+
+   
+</body>
+
+</html>
